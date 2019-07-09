@@ -10,7 +10,6 @@ const SignInRegistryPage  = () => (
     <div className="sign-in-and-sign-up">
         <SignIn/>
         <SignUp/>
-
     </div>
 
 

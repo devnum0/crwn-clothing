@@ -22,7 +22,6 @@ export default class SignIn extends Component {
         try{
            await auth.signInWithEmailAndPassword(email,password);
         }catch(error){
-            //throw new Error(`User with email address ${email} does not exits`);
             alert(`User with email address ${email} does not exits`);
         }
         this.setState({
