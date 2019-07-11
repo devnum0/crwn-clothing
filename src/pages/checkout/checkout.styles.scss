@@ -6,6 +6,10 @@
     align-items: center;
     margin: 50px auto 0;
   
+    .test-warning{
+      color:red;
+      margin-bottom: 10px;
+    }
     .checkout-header {
       width: 100%;
       padding: 10px 0;
@@ -21,6 +25,10 @@
           width: 8%;
         }
       }
+    }
+    button{
+      margin-left: auto;
+      margin-top: 10px;
     }
   
     .total {
