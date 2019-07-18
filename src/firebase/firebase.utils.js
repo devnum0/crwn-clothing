@@ -3,13 +3,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: "AIzaSyCxqfMQ9vrogzKu5ZzKvlhBJ5mooXVc5BI",
-  authDomain: "oppsreact.firebaseapp.com",
-  databaseURL: "https://oppsreact.firebaseio.com",
-  projectId: "oppsreact",
+  apiKey: `${process.env.REACT_APP_NOT_SECRET_CODE}`,
+  authDomain: `${process.env.REACT_APP_DOMAIN}`,
+  databaseURL: `${process.env.REACT_APP_DB}`,
+  projectId: `${process.env.REACT_APP_PROJECT}`,
   storageBucket: "",
-  messagingSenderId: "618776115471",
-  appId: "1:618776115471:web:1a8bfb3bc46b66be"
+  messagingSenderId: `${process.env.REACT_APP_SENDER_ID}`,
+  appId: `${process.env.REACT_APP_APP_ID}`
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
